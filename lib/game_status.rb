@@ -27,8 +27,8 @@ def won?(board)
       if combo == board
         return true
       end
+      return WIN_COMBINATIONS[combo]
     end
-    return WIN_COMBINATIONS[index]
   end
 #  WIN_COMBINATIONS.each do |index|
 #    if index == board
