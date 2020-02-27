@@ -30,7 +30,7 @@ def won?(board)
       end
 #      if position_taken?(board, index)
     end
-#    return 
+#    return
   end
 #  WIN_COMBINATIONS.each do |index|
 #    if index == board
