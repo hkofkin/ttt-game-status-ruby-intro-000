@@ -18,22 +18,15 @@ WIN_COMBINATIONS = [
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
-    win_combination = []
-    WIN_COMBINATIONS.each do |combo|
-      if combo == board
-        return true
-      else
-        return false
-      end
+  win_combination = []
+  WIN_COMBINATIONS.each do |combo|
+    if combo == board
+      return true
       win_combination << board if position.taken?(board, index)
-#      if position_taken?(board, index)
+    else
+      return false
     end
-#    return
-#  WIN_COMBINATIONS.each do |index|
-#    if index == board
-#      return WINNING_COMBINATION[index]
-#    end
-#  end
+  end
 end
 
 def full?(board)
