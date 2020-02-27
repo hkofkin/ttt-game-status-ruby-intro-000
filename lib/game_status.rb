@@ -21,7 +21,7 @@ def won?(board)
   win_combination = []
   WIN_COMBINATIONS.select do |combo|
     if combo == board.
-      return "#{combo}"
+      return combo
 #      win_combination << board if position.taken?(board, index)
     else
       return false
