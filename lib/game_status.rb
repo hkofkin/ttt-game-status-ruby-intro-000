@@ -18,10 +18,10 @@ WIN_COMBINATIONS = [
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
-#    win_combination = position_taken?(board, index)
+    win_combination = []
     WIN_COMBINATIONS.each do |combo|
       if combo == board
-        return combo.to_a
+        win_combination << combo if position.taken?
       else
         return false
       end
