@@ -32,7 +32,7 @@ end
 
 def full?(board)
   board.each do |move|
-    if board.all?
+    if move.all?
       return true
     else #index == " " || index == ""
       return false
