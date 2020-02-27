@@ -20,8 +20,9 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 def won?(board)
   win_combination = []
   WIN_COMBINATIONS.select do |combo|
-    if board.position_taken?
+    if combo == board
       return true
+      win_combination << board if position.taken?(board, index)
     else
       return false
     end
