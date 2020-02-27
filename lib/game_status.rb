@@ -34,8 +34,9 @@ def full?(board)
   board.each do |index|
     if index == "X" || index == "O"
       return true
-    if index == " " || index == ""
+    else #index == " " || index == ""
       return false
+    end
   end
 end
 
