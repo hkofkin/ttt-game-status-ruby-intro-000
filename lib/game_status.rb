@@ -31,8 +31,8 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |index|
-    if index == "X" || index == "O"
+  board.each do |move|
+    if board.all?
       return true
     else #index == " " || index == ""
       return false
