@@ -21,7 +21,7 @@ def won?(board)
 #    win_combination = position_taken?(board, index)
     WIN_COMBINATIONS.each do |combo|
       if combo == board
-        return combo
+        return combo.to_a
       else
         return false
       end
