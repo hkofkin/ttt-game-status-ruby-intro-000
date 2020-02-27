@@ -24,11 +24,13 @@ def won?(board)
   else
 #    win_combination = position_taken?(board, index)
     WIN_COMBINATIONS.each do |combo|
+      position_taken?(board, index)
       if combo == board
         return true
       end
+#      if position_taken?(board, index)
     end
-    return true
+#    return 
   end
 #  WIN_COMBINATIONS.each do |index|
 #    if index == board
