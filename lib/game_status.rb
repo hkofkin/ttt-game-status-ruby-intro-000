@@ -22,7 +22,7 @@ def won?(board)
   WIN_COMBINATIONS.select do |combo|
     if combo == board
       return combo
-#      win_combination << board if position.taken?(board, index)
+      win_combination << board if position.taken?(board, index)
     else
       return false
     end
