@@ -18,8 +18,6 @@ WIN_COMBINATIONS = [
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def won?(board)
-#  win_one = WIN_COMBINATIONS[0]
-  position_taken?(board, index)
   if board.empty?
     return false
   else
